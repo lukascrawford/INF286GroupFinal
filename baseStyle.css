@@ -32,7 +32,6 @@ head {
 }
 a {
     color: var(--link-color);
-    white-space: nowrap;
 }
 a:hover {
     color: var(--hover-color);
@@ -40,4 +39,5 @@ a:hover {
 }
 header a {
     color: var(--accent-color);
+    white-space: nowrap;
 }
