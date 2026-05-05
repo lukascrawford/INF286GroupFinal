@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 
-<html lang ="en">
+<html lang="en">
 <link rel="stylesheet" herf="/baseStyle.css">
+
 <head>
 	<img src="/Images/logo/11948.gif" alt="VIRTUS_LOGO">
+	<script>
+		window.addEventListener('load', _ => {
+			document.getElementById("entry").addEventListener("submit", e => {
+				e.preventDefault();
+			});
+		});
+	</script>
+
 </head>
-	
+
 <header>
 	<p>
-	<a href="/preLogIn/aboutUs.html">About Us</a>
+		<a href="/preLogIn/aboutUs.html">About Us</a>
 
-	<a href="/preLogIn/whatWeOffer.html">What We Offer</a>
+		<a href="/preLogIn/whatWeOffer.html">What We Offer</a>
 
-	<a href="/preLogIn/resources.html">Resources</a>
+		<a href="/preLogIn/resources.html">Resources</a>
 
-	<a href="/preLogIn/reportChildAbuse.html">Report Child Abuse</a>
+		<a href="/preLogIn/reportChildAbuse.html">Report Child Abuse</a>
 
-	<a href="/preLogIn/helpFAQ.html">Help/FQA</a>
+		<a href="/preLogIn/helpFAQ.html">Help/FQA</a>
 
 	</p>
 </header>
@@ -24,27 +33,166 @@
 <body>
 
 	<div id="splash">
-	
-	<span style="float:right; margin-center: 5px; margin-top: -20px;"><iframe width="320" height="240" src="https://www.youtube.com/embed/Q6HE_y1iPgs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
+
+		<span style="float:right; margin:center 5px; margin-top: -20px;"><iframe width="320" height="240"
+				src="https://www.youtube.com/embed/Q6HE_y1iPgs" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe></span>
 
 	</div>
 
 	<div class="Login">
 		<form>
-           <div>
-            <label for="username-input">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Z"/></svg>
-            </label>
-                <input type="text" name="username" id="username-input" placeholder="Username">
-           </div>
-           <div>
-                <label for="password-input">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm240-200q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80Z"/></svg>
-                </label>
-                <input type="password" name="password" id="password-input" placeholder="Password">
-           </div> 
-           <button type="submit">Login</button>
-        </form>
+			<div>
+				<label for="username-input">
+					<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+						fill="#1f1f1f">
+						<path
+							d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Z" />
+					</svg>
+				</label>
+				<input type="text" name="username" id="username-input" placeholder="Username">
+			</div>
+			<div>
+				<label for="password-input">
+					<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+						fill="#1f1f1f">
+						<path
+							d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm240-200q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80Z" />
+					</svg>
+				</label>
+				<input type="password" name="password" id="password-input" placeholder="Password">
+			</div>
+			<button type="submit">Login</button>
+		</form>
 	</div>
+
+	<div class="grey-box poll-nottaken" id="poll">
+		<div class="top"></div>
+		<div class="middle">
+			<form id="entry">
+				<input type="hidden" name="poll_id" value="1644">
+				<h1>What is Your Opinion?</h1>
+				<p>Do you use a filter or monitoring software at home?</p>
+				<fieldset>
+
+
+					<div class="choice">
+						<input type="radio" id="choice-1" name="choice" value="1" />
+						<label for="choice-1">Yes, on all our devices</label>
+					</div>
+
+
+
+					<div class="choice">
+						<input type="radio" id="choice-2" name="choice" value="2" />
+						<label for="choice-2">Yes, on some devices</label>
+					</div>
+
+
+
+					<div class="choice">
+						<input type="radio" id="choice-3" name="choice" value="3" />
+						<label for="choice-3">No</label>
+					</div>
+
+
+
+					<div class="choice">
+						<input type="radio" id="choice-4" name="choice" value="4" />
+						<label for="choice-4">I'm not sure.</label>
+					</div>
+
+
+
+					<div class="choice">
+						<input type="radio" id="choice-5" name="choice" value="5" />
+						<label for="choice-5">I don't have kids at home to monitor.</label>
+					</div>
+
+
+
+
+				</fieldset>
+				<input type="submit" value="Submit Vote!" />
+			</form>
+		</div>
+		<div class="bottom"></div>
+	</div>
+
+	<div class="homepage-article">
+	<h1>5 Keys to Monitoring Kids Online Activity</h1>
+	<div class="article-text">
+		
+			<img float="left" alt="5 Keys to Monitoring Kids Online Activity" src="/Images/UPLOAD/VHP_2023-01-16_100x120.jpg"/>
+		
+		<p>Monitoring and guiding kids' online activity is so important! Here are five areas to consider.&nbsp;&nbsp;<a title="Read More" href="">Read More</a></p>
+	</div>
+	
+</div>
+
+
+<ul class="boxes">
+	
+		
+		
+			
+			
+				
+			
+		
+	
+		
+		
+			
+			
+				
+					
+					
+						<li class="white-box">
+							<div class="top"></div>
+							<div class="middle" style="height:135px;">
+								
+									<img float="left" alt="Acknowledging victims, survivors and thrivers" src="/Images/UPLOAD/VHP_2023-01-30_50x50.jpg" width="50" height="50"/>
+								
+								<p>Labels, no matter how carefully thought out, how inclusively planned or politically corrected, are not for people. Labels are for jars. Terms don't adequately describe or cannot fully describe a person who has been sexually abused.</p>
+								<a class="read-more" href="">Read More</a>				
+							</div>
+							<div class="bottom"></div>
+						</li>
+						
+					
+				
+			
+		
+	
+		
+		
+			
+			
+				
+					
+					
+						<li class="white-box">
+							<div class="top"></div>
+							<div class="middle" style="height:135px;">
+								
+									<img float="left" alt="When a Child Discloses" src="/Images/UPLOAD/VHP_2022-09-26_50x50.jpg" width="50" height="50"/>
+								
+								<p>If a child discloses abuse, here are a few ways to handle that crucial conversation.</p>
+								<a class="read-more" href="">Read More</a>				
+							</div>
+							<div class="bottom"></div>
+						</li>
+						
+					
+				
+			
+		
+	
+</ul>
+
+
 </body>
+
 </html>
