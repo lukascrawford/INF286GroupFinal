@@ -4,7 +4,10 @@
     --base-color: #fefff9;
     --text-color: #2E2B41;
     --input-color: #BFBFBF;
-    --hover-color: #fdfff0;
+}
+*{
+    margin: 0;
+    padding: 0;
 }
 html {
     font-size: 12pt;
@@ -15,4 +18,20 @@ html {
 body {
     background-color: var(--base-color);
     
+}
+header {
+    background-color: var(--accent-color);
+    font-size: 16pt;
+
+}
+head {
+    background-color: var(white);
+}
+a {
+    color: var(--base-color);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--text-color);
+    text-decoration: underline;
 }
