@@ -1,0 +1,84 @@
+:root {
+    --border-color: #13826B;
+    --accent-color: #ffffff;
+    --base-color: #fefff9;
+    --text-color: #000000;
+    --input-color: #BFBFBF;
+    --hover-color: #d19afe;
+    --link-color: #3AAEBD;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    color: var(--text-color);
+}
+header {
+    display: flex;
+    padding: 5%;
+    justify-content: center;
+    background-color: var(--border-color);
+    flex-direction: row;
+    gap: 5%;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 486 / 100;
+    width: 40%;
+    background-image: url(/Images/logo.png);
+    background-size: cover;
+}
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: left;  
+    aspect-ratio: 328 / 167;
+    width: 40%;
+    background-image: url(/Images/multipleRowsOfKids.png);
+    background-size: cover;
+    overflow: hidden;
+}
+.wrapper {
+    display: flex;
+    background-color: var(--accent-color);
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20%;
+}
+a {
+    color: var(--accent-color);
+}
+a:hover {
+    color: var(--hover-color);
+    text-decoration: none;
+}
+header a {
+    font-size: 2.5vw;
+}
+footer {
+    display: flex;
+    background-color: var(--border-color);
+    color: var(--base-color);
+    justify-content: center;
+    font-size: 2vw;
+}
+.symbol {
+    display: flex;
+    background-image: url(/Images/symbol.png);
+    background-color: var(--accent-color);
+    aspect-ratio: 178 / 92;
+    width: 40%;
+    background-size: cover;
+    
+}
+.stacker {
+   display: flex;
+   flex-direction: column;
+   place-items: center;
+
+}
