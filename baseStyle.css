@@ -23,9 +23,9 @@ body {
 }
 header {
     background-color: var(--border-top-color);
+    line-height: 30pt;
     font-size: 16pt;
-
-
+    height: 30pt;
 }
 head {
     background-color: var(white);
@@ -39,5 +39,6 @@ a:hover {
 }
 header a {
     color: var(--accent-color);
-    white-space: nowrap;
+    padding: 5%;
 }
+
