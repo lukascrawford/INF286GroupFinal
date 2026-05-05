@@ -1,0 +1,18 @@
+:root {
+    border-top-color: #13826B;
+    --accent-color: #BA230F;
+    --base-color: #fefff9;
+    --text-color: #2E2B41;
+    --input-color: #BFBFBF;
+    --hover-color: #fdfff0;
+}
+html {
+    font-size: 12pt;
+    font-family: sans-serif;
+    color: var(--text-color);
+    text-align: center; 
+}
+body {
+    background-color: var(--base-color);
+    
+}
