@@ -1,9 +1,11 @@
 :root {
-    border-top-color: #13826B;
-    --accent-color: #BA230F;
+    --border-top-color: #13826B;
+    --accent-color: #ffffff;
     --base-color: #fefff9;
     --text-color: #2E2B41;
     --input-color: #BFBFBF;
+    --hover-color: #d19afe;
+    --link-color: #3AAEBD;
 }
 *{
     margin: 0;
@@ -20,18 +22,21 @@ body {
     
 }
 header {
-    background-color: var(--accent-color);
+    background-color: var(--border-top-color);
     font-size: 16pt;
+
 
 }
 head {
     background-color: var(white);
 }
 a {
-    color: var(--base-color);
-    text-decoration: none;
+    color: var(--link-color);
 }
 a:hover {
-    color: var(--text-color);
-    text-decoration: underline;
+    color: var(--hover-color);
+    text-decoration: none;
+}
+header a {
+    color: var(--accent-color);
 }
