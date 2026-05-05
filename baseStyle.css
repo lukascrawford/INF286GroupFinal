@@ -32,6 +32,7 @@ head {
 }
 a {
     color: var(--link-color);
+    white-space: nowrap;
 }
 a:hover {
     color: var(--hover-color);
