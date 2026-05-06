@@ -72,7 +72,7 @@ footer {
     background-image: url(/Images/symbol.png);
     background-color: var(--accent-color);
     aspect-ratio: 178 / 92;
-    width: 40%;
+    width: 60%;
     background-size: cover;
     
 }
