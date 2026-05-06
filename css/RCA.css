@@ -1,0 +1,11 @@
+.hidden-content {
+  display: none; /* Keeps content hidden initially */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+.format {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
